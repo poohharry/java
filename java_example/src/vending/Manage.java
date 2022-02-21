@@ -1,12 +1,13 @@
 package vending;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Manage {
 
 
 	Scanner sc = new Scanner(System.in);
-
+	Drink[] _drinks = Vending_machine.drinks;
     public void manage_mode() {
     	label0:
     		while(true) {
@@ -19,8 +20,8 @@ public class Manage {
 		        System.out.println("6 : 상위메뉴로");
 		        int mode = sc.nextInt();
 		        switch(mode) {
-		        case 1: 
-		        case 2: 
+		        case 1: checkPro(); break;
+		        case 2: regi_pro(); break;
 		        case 3: 
 		        case 4: 
 		        case 5: 
@@ -34,6 +35,13 @@ public class Manage {
     }
 
     public void checkPro() {
+    	for(int i = 0; i < 1; i++) {
+    		System.out.println("1번째 칸 : " + _drinks[i].getName() + ", " + _drinks[i].getPrice() + "원");
+    	}
+    }
+    
+    public void regi_pro() {
     	
     }
+	
 }

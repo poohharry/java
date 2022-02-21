@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 
 public class Vending_machine {
+	static Drink[] drinks = new Drink[16];
+	
     public static void main(String args[]) {
+    	drinks[0] = new Drink("coke", 500);
         Manage mg = new Manage();
         Sale sale = new Sale();
         Scanner sc = new Scanner(System.in);
+        
         while(true) {	
-        	Drink[] drinks = new Drink[16];
-//            drinks[0] = new Drink("coke", 500);
         	System.out.println("모드를 선택하세요");
         	System.out.println("1 : 판매모드");
         	System.out.println("2 : 관리자모드");
@@ -36,6 +38,5 @@ public class Vending_machine {
         		break;
         	}
         }
-        
     }
-}
+} 
