@@ -10,6 +10,8 @@ Statement stmt = null;
 // 결과값 저장
 ResultSet rs = null;
 
+
+String test = "";
 String id = "";
 String pw = "";
 String name = "";
